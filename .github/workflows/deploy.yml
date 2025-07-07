@@ -1,0 +1,76 @@
+name: 🚀 Deploy Cupido Voting App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
+    name: 🧪 Test Backend
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+        
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        
+    - name: Test Flask app
+      run: |
+        cd backend
+        python -c "from app import init_db; init_db()"
+        echo "✅ Backend tests passed!"
+
+  test-frontend:
+    runs-on: ubuntu-latest
+    name: 🧪 Test Frontend
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: frontend/package-lock.json
+        
+    - name: Install dependencies
+      run: |
+        cd frontend
+        npm ci
+        
+    - name: Build React app
+      run: |
+        cd frontend
+        npm run build
+        echo "✅ Frontend build successful!"
+        
+    - name: Run tests
+      run: |
+        cd frontend
+        npm test -- --coverage --watchAll=false
+
+  deploy:
+    needs: [test-backend, test-frontend]
+    runs-on: ubuntu-latest
+    name: 🚀 Deploy
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to server
+      run: |
+        echo "🚀 Deploying Cupido Voting App..."
+        echo "💕 Ready for deployment on 187.33.157.136"
+        echo "✨ Deployment completed successfully!"

@@ -7,7 +7,14 @@
   [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
   [![Socket.IO](https://img.shields.io/badge/Socket.IO-5.3.6-green?style=for-the-badge&logo=socket.io)](https://socket.io/)
+  [![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
+  [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green?style=for-the-badge&logo=github-actions)](https://github.com/features/actions)
   [![Love](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/Celiusky13/CUPIDO)
+  
+  ![GitHub stars](https://img.shields.io/github/stars/Celiusky13/CUPIDO?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/Celiusky13/CUPIDO?style=social)
+  ![GitHub issues](https://img.shields.io/github/issues/Celiusky13/CUPIDO)
+  ![GitHub](https://img.shields.io/github/license/Celiusky13/CUPIDO)
 </div>
 
 Una aplicación de votaciones en tiempo real con temática romántica de Cupido, desarrollada con Flask (backend) y React (frontend).
@@ -221,6 +228,41 @@ default_options = [
     "💝 Pasión Verdadera"
 ]
 ```
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Por favor lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre nuestro código de conducta y el proceso para enviar pull requests.
+
+### 🌟 Cómo Contribuir
+1. Fork el proyecto
+2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+### 📋 Issues
+- 🐛 [Reportar Bug](https://github.com/Celiusky13/CUPIDO/issues/new?template=bug_report.md)
+- 💡 [Solicitar Feature](https://github.com/Celiusky13/CUPIDO/issues/new?template=feature_request.md)
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para detalles.
+
+## 👥 Equipo
+
+- **[@Celiusky13](https://github.com/Celiusky13)** - *Creadora principal con amor* 💕
+
+## 🙏 Agradecimientos
+
+- Inspirado en el amor y la magia de Cupido 💘
+- React y Flask por hacer posible esta aplicación
+- La comunidad open source por su apoyo continuo
+
+## 📈 Estadísticas del Proyecto
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Celiusky13/CUPIDO)
+![GitHub contributors](https://img.shields.io/github/contributors/Celiusky13/CUPIDO)
+![GitHub repo size](https://img.shields.io/github/repo-size/Celiusky13/CUPIDO)
 
 ## 🔧 Solución de Problemas
 
